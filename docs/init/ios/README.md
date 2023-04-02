@@ -205,6 +205,12 @@ Hello Rust
 Hello Rust
 </pre>
 
+- [ ] App
+
+The app will display nothing but the Terminal output is shown above.
+
+After exiting (pressing home button) you will see the App Icon on the Home Page
+
 <img src=images/Fanorona-App.png width=330 height=700 > </img>
 
 
