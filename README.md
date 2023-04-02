@@ -25,12 +25,12 @@ Hello, world!
 ```
 cargo --version
 ```
-> cargo 1.58.0 (f01b232bc 2022-01-19)
+> cargo 1.68.0 (115f34552 2023-02-26)
 
 ```
 rustc --version
 ```
-> rustc 1.58.1 (db9d1b20b 2022-01-20)
+> rustc 1.68.1 (8460ca823 2023-03-20) (built from a source tarball)
 
 
 # References
