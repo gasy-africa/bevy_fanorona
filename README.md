@@ -1,11 +1,11 @@
-# Bevy Fanorona
+# Fanorona written in Bevy
 
 ```
-cargo new bevy_fanorona
+cargo new fanorona-bevy
 ```
 
 ```
-cd bevy_fanorona
+cd fanorona-bevy
 ```
 
 ```
@@ -13,10 +13,6 @@ cargo run
 ```
 > Outputs
 <pre>
-   Compiling bevy_fanorona v0.1.0 (/Users/valiha/Developer/bevy_fanorona)
-    Finished dev [unoptimized + debuginfo] target(s) in 1.40s
-     Running `target/debug/bevy_fanorona`
-Hello, world!
 </pre>
 
 
