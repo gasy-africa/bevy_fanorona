@@ -142,7 +142,7 @@ ls -l target | grep aarch64
 brew install dasel
 ```
 
-<img src=images/Fanorona-App.png width='' height='' > </img>
+<img src=images/Fanorona-App.png width=330 height=700 > </img>
 
 
 :x: Troubleshooting
