@@ -135,6 +135,16 @@ ls -l target | grep aarch64
 ```
 > drwxr-xr-x@  4 redacted  staff  128  2 Apr 17:06 aarch64-apple-ios-sim
 
+
+- [ ] Install [`Dasel`](https://daseldocs.tomwright.me/)
+
+```
+brew install dasel
+```
+
+<img src=images/Fanorona-App.png width='' height='' > </img>
+
+
 :x: Troubleshooting
 
 - [ ] Add `.package.description` field to `Cargo.toml` file
@@ -145,12 +155,6 @@ cargo bundle --target aarch64-apple-ios-sim
 > error: missing field `description` for key `package`
 
 
-
-- [ ] Install [`Dasel`](https://daseldocs.tomwright.me/)
-
-```
-brew install dasel
-```
 
 # References
 
