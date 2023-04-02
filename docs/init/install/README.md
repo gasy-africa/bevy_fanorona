@@ -1,4 +1,4 @@
-# Install
+# :construction: Install
 
 ## :a: [Rustup: the Rust installer and version management tool](https://www.rust-lang.org/learn/get-started)
 
