@@ -1,7 +1,8 @@
 # Install
 
-:a: [Rustup: the Rust installer and version management tool](https://www.rust-lang.org/learn/get-started)
+## :a: [Rustup: the Rust installer and version management tool](https://www.rust-lang.org/learn/get-started)
 
+:bulb: Installing using the convenient script allows the usage of `rustup` tool.
 
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -111,3 +112,16 @@ Cargo's bin directory ($HOME/.cargo/bin).
 To configure your current shell, run:
 source "$HOME/.cargo/env"
 </pre>
+
+## :b: Versions
+
+```
+cargo --version
+```
+> cargo 1.68.0 (115f34552 2023-02-26)
+
+```
+rustc --version
+```
+> rustc 1.68.1 (8460ca823 2023-03-20) (built from a source tarball)
+
