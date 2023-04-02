@@ -214,9 +214,20 @@ After exiting (pressing home button) you will see the App Icon on the Home Page
 <img src=images/Fanorona-App.png width=330 height=700 > </img>
 
 
-:x: Troubleshooting
+:o: Metadata
 
 - [ ] Add `.package.description` field to `Cargo.toml` file
+
+```toml
+   description = "Fanorona App on iOS"
+```
+
+- [ ] Add the Metadata to `Cargo.toml` file used when generating an iOS APP, for example.
+
+```toml
+[package.metadata.bundle]
+identifier = "com.valiha.fanorona"
+```
 
 ```
 cargo bundle --target aarch64-apple-ios-sim
