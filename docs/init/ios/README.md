@@ -275,33 +275,46 @@ x86_64-apple-ios (installed)
 </pre>
 
 
+```shell
+# for production
+rustup target add aarch64-apple-ios
 ```
-rustup target add x86_64-apple-ios
-```
+> info: component 'rust-std' for target 'aarch64-apple-ios' is up to date
 
+```shell
+# for development
+rustup target add aarch64-apple-ios-sim
+```
+> info: component 'rust-std' for target 'aarch64-apple-ios-sim' is up to date
 
 ```
-cargo bundle --target x86_64-apple-ios
+cargo bundle --target aarch64-apple-ios-sim
 ```
 > Outputs :
 <pre>
-info: downloading component 'rust-std' for 'aarch64-apple-ios-sim'
-info: installing component 'rust-std' for 'aarch64-apple-ios-sim'
- 26.5 MiB /  26.5 MiB (100 %)  12.5 MiB/s in  2s ETA:  0s
+   Compiling cfg-if v1.0.0
+   Compiling libc v0.2.140
+   ...
+   Compiling ios v0.1.0 (/Users/[redacted]/Developer/fanorona-bevy/docs/init/ios)
+    Finished dev [unoptimized + debuginfo] target(s) in 40.18s
+warning: iOS bundle support is still experimental.
+    Bundling ios.app
+    Finished 1 bundle at:
+        /Users/[redacted]/Developer/fanorona-bevy/docs/init/ios/target/aarch64-apple-ios-sim/debug/bundle/ios/ios.app
 </pre>
 
 
 ```
-ls -l target  | grep x86_64-apple
+ls -l target | grep aarch64
 ```
-> drwxr-xr-x@  4 valiha  staff  128 Apr  2 16:28 x86_64-apple-ios
+> drwxr-xr-x@  4 redacted  staff  128  2 Apr 17:06 aarch64-apple-ios-sim
 
 :x: Troubleshooting
 
 - [ ] Add `.package.description` field to `Cargo.toml` file
 
 ```
-cargo bundle --target x86_64-apple-ios
+cargo bundle --target aarch64-apple-ios-sim
 ```
 > error: missing field `description` for key `package`
 
