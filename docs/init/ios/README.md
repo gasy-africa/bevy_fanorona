@@ -142,6 +142,69 @@ ls -l target | grep aarch64
 brew install dasel
 ```
 
+- [ ] Launch the App
+
+```
+bash launch-simulator.sh                   
+```
+> Outputs :
+<pre>
+warning: crate `Fanorona` should have a snake case name
+  |
+  = help: convert the identifier to snake case: `fanorona`
+  = note: `#[warn(non_snake_case)]` on by default
+
+warning: `Fanorona` (bin "Fanorona") generated 1 warning
+    Finished dev [unoptimized + debuginfo] target(s) in 0.13s
+warning: iOS bundle support is still experimental.
+    Bundling Fanorona.app
+    Finished 1 bundle at:
+        /Users/u0000000021/Developer/fanorona-bevy/docs/init/ios/target/aarch64-apple-ios-sim/debug/bundle/ios/Fanorona.app
+An error was encountered processing the command (domain=com.apple.CoreSimulator.SimError, code=405):
+Unable to boot device in current state: Booted
+com.valiha.fanorona: 42705
+2023-04-02T21:20:02.258300Z  INFO bevy_render::renderer: AdapterInfo { name: "Apple iOS simulator GPU", vendor: 0, device: 0, device_type: DiscreteGpu, driver: "", driver_info: "", backend: Metal }
+2023-04-02T21:20:02.839413Z ERROR bevy_gilrs: Failed to start Gilrs. Gilrs does not support current platform.
+2023-04-02T21:20:02.858829Z  INFO bevy_winit::system: Creating new window "Bevy App" (0v0)
+2023-04-02T21:20:02.858896Z  WARN winit::platform_impl::platform::window: `WindowAttributes::min_inner_size` is ignored on iOS    
+Hello Rust
+2023-04-02T21:20:02.953223Z  WARN winit::platform_impl::platform::app_state: processing non `RedrawRequested` event after the main event loop: RedrawEventsCleared    
+2023-04-02T21:20:02.953535Z  WARN winit::platform_impl::platform::app_state: processing non `RedrawRequested` event after the main event loop: WindowEvent {
+    window_id: WindowId(
+        WindowId {
+            window: 0x000000012c41e900,
+        },
+    ),
+    event: Resized(
+        PhysicalSize {
+            width: 3840,
+            height: 2160,
+        },
+    ),
+}    
+2023-04-02T21:20:02.953750Z  WARN winit::platform_impl::platform::app_state: processing non `RedrawRequested` event after the main event loop: RedrawEventsCleared    
+Hello Rust
+2023-04-02T21:20:02.985436Z  WARN winit::platform_impl::platform::app_state: processing non `RedrawRequested` event after the main event loop: RedrawEventsCleared    
+2023-04-02T21:20:02.985518Z  WARN winit::platform_impl::platform::app_state: processing non `RedrawRequested` event after the main event loop: WindowEvent {
+    window_id: WindowId(
+        WindowId {
+            window: 0x000000012c41e900,
+        },
+    ),
+    event: Resized(
+        PhysicalSize {
+            width: 3840,
+            height: 2160,
+        },
+    ),
+}    
+Hello Rust
+2023-04-02T21:20:03.007684Z  WARN winit::platform_impl::platform::app_state: processing non `RedrawRequested` event after the main event loop: RedrawEventsCleared    
+Hello Rust
+2023-04-02T21:20:03.014765Z  WARN winit::platform_impl::platform::app_state: processing non `RedrawRequested` event after the main event loop: RedrawEventsCleared    
+Hello Rust
+</pre>
+
 <img src=images/Fanorona-App.png width=330 height=700 > </img>
 
 
