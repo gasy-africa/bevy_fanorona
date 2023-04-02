@@ -32,7 +32,3 @@ rustc --version
 ```
 > rustc 1.68.1 (8460ca823 2023-03-20) (built from a source tarball)
 
-
-# References
-
-- [ ] [Chess game in Rust using Bevy](https://caballerocoll.com/blog/bevy-chess-tutorial)
