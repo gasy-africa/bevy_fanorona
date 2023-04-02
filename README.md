@@ -13,6 +13,10 @@ cargo run
 ```
 > Outputs
 <pre>
+   Compiling bevy_fanorona v0.1.0 (~/Developer/fanorona-bevy)
+    Finished dev [unoptimized + debuginfo] target(s) in 1.44s
+     Running `target/debug/bevy_fanorona`
+Hello, world!
 </pre>
 
 
