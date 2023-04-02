@@ -61,6 +61,8 @@ Hello Rust
 Hello Rust
 </pre>
 
+![image](images/bevy_app.png)
+
 
 :round_pushpin: Where is the GUI?
 
