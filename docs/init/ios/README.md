@@ -269,9 +269,9 @@ rustup target list | grep ios
 ```
 > Outputs :
 <pre>
-aarch64-apple-ios
-aarch64-apple-ios-sim
-x86_64-apple-ios
+aarch64-apple-ios (installed)
+aarch64-apple-ios-sim (installed)
+x86_64-apple-ios (installed)
 </pre>
 
 
