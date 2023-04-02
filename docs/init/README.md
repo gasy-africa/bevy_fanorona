@@ -32,3 +32,7 @@ rustc --version
 ```
 > rustc 1.68.1 (8460ca823 2023-03-20) (built from a source tarball)
 
+# References
+
+- [ ] [Native iOS Game Development w/ Rust](https://dev.to/wadecodez/exploring-rust-for-native-ios-game-development-2bna)
+
