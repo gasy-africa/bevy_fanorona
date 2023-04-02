@@ -37,6 +37,8 @@ cargo run
 Hello Rust
 </pre>
 
+:round_pushpin: Where is the GUI?
+
 - [ ] Add the `Bevy`'s default plugins to the `App`
 
 ```rust
@@ -63,8 +65,7 @@ Hello Rust
 
 ![image](images/bevy_app.png)
 
-
-:round_pushpin: Where is the GUI?
+:two: Building for iOS (Cross Platform Upfront)
 
 ```
 cargo install cargo-bundle
