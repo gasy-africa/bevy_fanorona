@@ -67,9 +67,56 @@ Hello Rust
 
 :two: Building for iOS (Cross Platform Upfront)
 
+- [ ] Bundling (if not already installed)
+
 ```
 cargo install cargo-bundle
 ```
+
+- [ ] Adding Compilation Targets
+
+```
+rustup target list | grep ios
+```
+> Outputs :
+<pre>
+aarch64-apple-ios
+aarch64-apple-ios-sim
+x86_64-apple-ios
+</pre>
+
+
+```
+rustup target add x86_64-apple-ios
+```
+
+
+```
+cargo bundle --target x86_64-apple-ios
+```
+> Outputs :
+<pre>
+info: downloading component 'rust-std' for 'aarch64-apple-ios-sim'
+info: installing component 'rust-std' for 'aarch64-apple-ios-sim'
+ 26.5 MiB /  26.5 MiB (100 %)  12.5 MiB/s in  2s ETA:  0s
+</pre>
+
+
+```
+ls -l target  | grep x86_64-apple
+```
+> drwxr-xr-x@  4 valiha  staff  128 Apr  2 16:28 x86_64-apple-ios
+
+:x: Troubleshooting
+
+- [ ] Add `.package.description` field to `Cargo.toml` file
+
+```
+cargo bundle --target x86_64-apple-ios
+```
+> error: missing field `description` for key `package`
+
+
 
 - [ ] Install [`Dasel`](https://daseldocs.tomwright.me/)
 
@@ -80,4 +127,5 @@ brew install dasel
 # References
 
 - [ ] [Native iOS Game Development w/ Rust](https://dev.to/wadecodez/exploring-rust-for-native-ios-game-development-2bna)
+- [ ] [aarch64-apple-ios-sim](https://doc.rust-lang.org/rustc/platform-support/aarch64-apple-ios-sim.html)
 
