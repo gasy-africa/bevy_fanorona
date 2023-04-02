@@ -52,12 +52,13 @@ cargo run
 ```
 > Outputs :
 <pre>
-   Compiling ios v0.1.0 (~/Developer/fanorona-bevy/docs/init/ios)
-    Finished dev [unoptimized + debuginfo] target(s) in 2.77s
+   .....
+   Compiling ios v0.1.0 (/Users/<redacted>/Developer/fanorona-bevy/docs/init/ios)
+    Finished dev [unoptimized + debuginfo] target(s) in 3m 10s
      Running `target/debug/ios`
-2023-04-02T18:55:00.338646Z  INFO bevy_render::renderer: AdapterInfo { name: "AMD Radeon Pro 560", vendor: 0, device: 0, device_type: DiscreteGpu, driver: "", driver_info: "", backend: Metal }
-2023-04-02T18:55:01.766183Z  INFO bevy_winit::system: Creating new window "Bevy App" (0v0)
-2023-04-02T18:55:01.899503Z  INFO bevy_diagnostic::system_information_diagnostics_plugin::internal: SystemInfo { os: "MacOS 13.2.1 ", kernel: "22.3.0", cpu: "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", core_count: "4", memory: "16.0 GiB" }
+2023-04-02T20:59:22.061203Z  INFO bevy_render::renderer: AdapterInfo { name: "Apple M1", vendor: 0, device: 0, device_type: IntegratedGpu, driver: "", driver_info: "", backend: Metal }
+2023-04-02T20:59:22.574230Z  INFO bevy_winit::system: Creating new window "Bevy App" (0v0)
+2023-04-02T20:59:22.674665Z  INFO bevy_diagnostic::system_information_diagnostics_plugin::internal: SystemInfo { os: "MacOS 13.2.1 ", kernel: "22.3.0", cpu: "Apple M1", core_count: "8", memory: "16.0 GiB" }
 Hello Rust
 Hello Rust
 Hello Rust
