@@ -133,9 +133,9 @@ cargo run
 
 ```rust
         // Set antialiasing to use 4 samples
-        .add_resource(Msaa { samples: 4 })
+        // .add_resource(Msaa { samples: 4 })
         // Set WindowDescriptor Resource to change title and size
-        .add_resource(WindowDescriptor {
+        .add_resource(Window {
             title: "Chess!".to_string(),
             width: 1600.,
             height: 1600.,
@@ -146,3 +146,4 @@ cargo run
 # References
 
 - [ ] [Chess game in Rust using Bevy](https://caballerocoll.com/blog/bevy-chess-tutorial/)
+- [ ] [Enable Fast Compiles (Optional) #](https://bevyengine.org/learn/book/getting-started/setup/#enable-fast-compiles-optional)
