@@ -98,14 +98,49 @@ Hello, world!
 
 ## :a: Getting started
 
-Now, getting some text as output is pretty cool, but better than that is to have a window open! So let's work on that. Let's remove all the contents of main.rs and replace them with the following:
+- [ ] Add the `bevy` library
+
+```
+cargo add bevy
+```
+
+- [ ] Let's remove all the contents of `main.rs` and replace them with the following:
 
 ```rust
 use bevy::prelude::*;
 
 fn main() {
-    App::build().add_plugins(DefaultPlugins).run();
+    App::new()
+      .add_plugins(DefaultPlugins)
+      .run();
 }
+```
+
+- [ ] Run the `App`
+
+```
+cargo run
+```
+> Outputs :
+```yaml
+   Compiling bevy_fanorona v0.1.0 (/Users/valiha/Developer/fanorona-bevy)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.63s
+     Running `target/debug/bevy_fanorona`
+2023-05-06T19:19:38.187097Z  INFO bevy_render::renderer: AdapterInfo { name: "AMD Radeon Pro 560", vendor: 0, device: 0, device_type: DiscreteGpu, driver: "", driver_info: "", backend: Metal }
+2023-05-06T19:19:39.552211Z  INFO bevy_winit::system: Creating new window "Bevy App" (0v0)
+2023-05-06T19:19:39.721104Z  INFO bevy_diagnostic::system_information_diagnostics_plugin::internal: SystemInfo { os: "MacOS 13.3.1 ", kernel: "22.4.0", cpu: "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", core_count: "4", memory: "16.0 GiB" }
+```
+
+```rust
+        // Set antialiasing to use 4 samples
+        .add_resource(Msaa { samples: 4 })
+        // Set WindowDescriptor Resource to change title and size
+        .add_resource(WindowDescriptor {
+            title: "Chess!".to_string(),
+            width: 1600.,
+            height: 1600.,
+            ..Default::default()
+        })
 ```
 
 # References
