@@ -31,21 +31,70 @@ brew install michaeleisel/zld/zld
 ```
 rustup toolchain install nightly
 ``` 
+> Outputs :
+```yaml
+info: syncing channel updates for 'nightly-x86_64-apple-darwin'
+info: latest update on 2023-05-06, rust version 1.71.0-nightly (f9a6b7158 2023-05-05)
+info: downloading component 'cargo'
+info: downloading component 'clippy'
+info: downloading component 'rust-docs'
+info: downloading component 'rust-std'
+info: downloading component 'rustc'
+info: downloading component 'rustfmt'
+info: removing previous version of component 'cargo'
+info: removing previous version of component 'clippy'
+info: removing previous version of component 'rust-docs'
+info: removing previous version of component 'rust-std'
+info: removing previous version of component 'rustc'
+info: removing previous version of component 'rustfmt'
+info: installing component 'cargo'
+info: installing component 'clippy'
+info: installing component 'rust-docs'
+ 13.6 MiB /  13.6 MiB (100 %)   3.9 MiB/s in  2s ETA:  0s
+info: installing component 'rust-std'
+ 27.1 MiB /  27.1 MiB (100 %)  11.9 MiB/s in  2s ETA:  0s
+info: installing component 'rustc'
+ 55.6 MiB /  55.6 MiB (100 %)  13.1 MiB/s in  4s ETA:  0s
+info: installing component 'rustfmt'
+
+  nightly-x86_64-apple-darwin updated - rustc 1.71.0-nightly (f9a6b7158 2023-05-05) (from rustc 1.70.0-nightly (2036fdd24 2023-03-27))
+
+info: checking for self-updates
+info: downloading self-update
+```
 
 * on the project directory to enable it.
 
 ```
 rustup override set nightly 
 ```
+> Outputs :
+```yaml
+info: using existing install for 'nightly-x86_64-apple-darwin'
+info: override toolchain for '/Users/valiha/Developer/fanorona-bevy' set to 'nightly-x86_64-apple-darwin'
+
+  nightly-x86_64-apple-darwin unchanged - rustc 1.71.0-nightly (f9a6b7158 2023-05-05)
+```
+
+* Install the `config` file
 
 ```
-mkdir .cargo
+mkdir .cargo && wget -o .cargo/config https://raw.githubusercontent.com/bevyengine/bevy/main/.cargo/config_fast_builds
 ```
 
-```
-wget -o .cargo/config https://raw.githubusercontent.com/bevyengine/bevy/main/.cargo/config_fast_builds
-```
+* Run to test
 
+
+```
+cargo run
+```
+> Outputs :
+```yaml
+   Compiling bevy_fanorona v0.1.0 (/Users/valiha/Developer/fanorona-bevy)
+    Finished dev [unoptimized + debuginfo] target(s) in 1.98s
+     Running `target/debug/bevy_fanorona`
+Hello, world!
+```
 
 ## :a: Getting started
 
