@@ -16,3 +16,6 @@ bevy_ui = "0.10.1"
 # Metadata used when generating an iOS APP, for example.
 [package.metadata.bundle]
 identifier = "com.valiha.fanorona"
+signature = "Apple Development: Joe Foo (B6ADF9EUYT)"
+provisioning_file = "bevy_provisioning_profile.mobileprovision"
+
