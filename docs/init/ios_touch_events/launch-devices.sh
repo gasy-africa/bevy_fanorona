@@ -9,8 +9,10 @@ ARCH=aarch64
 APP_NAME="$(cat Cargo.toml | dasel -r toml '.package.name')"
 
 BUNDLE_ID="$(cat Cargo.toml | dasel -r toml '.package.metadata.bundle.identifier')"
-SIGNATURE="$(cat Cargo.toml | dasel -r toml '.package.metadata.bundle.signature')"
-PROVISIONING_FILE="$(cat Cargo.toml | dasel -r toml '.package.metadata.bundle.provisioning_file')"
+
+# Signing
+SIGNATURE="$(cat Signing.toml | dasel -r toml '.package.metadata.signing.signature')"
+PROVISIONING_FILE="$(cat Signing.toml | dasel -r toml '.package.metadata.signing.provisioning_file')"
 
 # Add a specific platform
 rustup target add ${ARCH}-apple-ios
