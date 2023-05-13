@@ -33,6 +33,25 @@ x86_64-apple-ios (installed)
 rustup target add $(uname -m)-apple-ios
 ```
 
+## :gear: Confile File
+
+```toml
+# Metadata used when generating an iOS APP, for example.
+
+# To find a certificate in the keychain
+# certtool y | grep Joe Foo 
+
+# to find a provisioning file in the provisioning directory
+# ls -l ~/Library/MobileDevice/Provisioning\ Profiles
+
+[package.metadata.signing]
+signature = "Apple Development: Joe Foo (B6ADF9EUYT)"
+provisioning_file = "bevy_provisioning_profile.mobileprovision"
+```
+
+
+
+
 # References
 
 - [ ] [xcodebuild how to sign app with command line?](https://stackoverflow.com/questions/28395427/xcodebuild-how-to-sign-app-with-command-line)
