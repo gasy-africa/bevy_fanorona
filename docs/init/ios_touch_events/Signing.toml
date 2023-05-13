@@ -7,7 +7,7 @@
 # ls -l ~/Library/MobileDevice/Provisioning\ Profiles
 
 [package.metadata.signing]
-signature = "Apple Development: "
+signature = "Apple Development: Joe Foo (B6ADF9EUYT)"
 provisioning_file = "bevy_provisioning_profile.mobileprovision"
 
 
