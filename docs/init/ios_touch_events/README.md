@@ -96,3 +96,6 @@ Policy: Code Signing
   1) 30D51445A4EBDAAC46819CD09CD734A4EBDAAC46819CD0 "Apple Development: Joe Foo (B6ADF9EUYT)"
      1 valid identities found
 ```
+
+ - [ ] [iOS Code Signing: Provisioning Profiles](https://medium.com/codequest/ios-code-signing-provisioning-profile-d9cf3fcc85d2)
+ - [ ] [A Beginner’s Guide to Code Signing in iOS Development](https://medium.com/@bingkuo/a-beginners-guide-to-code-signing-in-ios-development-d3d5285f0960)

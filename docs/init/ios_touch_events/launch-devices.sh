@@ -39,7 +39,8 @@ codesign -dvvvv "target/${ARCH}-apple-ios/debug/bundle/ios/$APP_NAME.app"
 rm Payload.plist Entitlements.plist
 
 # Install the App onto the booted device
-ios-deploy --debug \
+# DEBUG="--debug"
+ios-deploy ${DEBUG} \
            --id ${DEVICE_ID} \
            --bundle_id ${BUNDLE_ID}  \
            --bundle "target/${ARCH}-apple-ios/debug/bundle/ios/$APP_NAME.app"
