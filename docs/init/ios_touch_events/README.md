@@ -33,7 +33,7 @@ x86_64-apple-ios (installed)
 rustup target add $(uname -m)-apple-ios
 ```
 
-## :gear: Confile File
+## :gear: Confile File `Signing.toml` (to be added depending on your configuration)
 
 ```toml
 # Metadata used when generating an iOS APP, for example.
