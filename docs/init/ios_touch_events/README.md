@@ -118,3 +118,6 @@ Policy: Code Signing
 
  - [ ] [iOS Code Signing: Provisioning Profiles](https://medium.com/codequest/ios-code-signing-provisioning-profile-d9cf3fcc85d2)
  - [ ] [A Beginner’s Guide to Code Signing in iOS Development](https://medium.com/@bingkuo/a-beginners-guide-to-code-signing-in-ios-development-d3d5285f0960)
+
+
+- [ ] [Placing Content in a Bundle](https://developer.apple.com/documentation/bundleresources/placing_content_in_a_bundle)
